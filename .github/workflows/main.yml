@@ -14,10 +14,11 @@ jobs:
 				
 		steps:
 			- uses: actions/checkout@v2
-			- name: Testing Build pre-deplot
+			- name: Testing Build pre-deploy
 			  uses: actions/setup-node@v2
         with:
 					node-version: ${{ matrix.node-version }}
 					cache: "npm"
 			- run: npm i
 			- run: npm run build
+
