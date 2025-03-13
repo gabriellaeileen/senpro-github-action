@@ -37,7 +37,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        PORT: ${{ secrets.PORT }}
+        port: ${{ secrets.PORT }}
         script: |
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/ssh-praktikan28
